@@ -11,10 +11,16 @@ const port = process.env.PORT
 const salt = bcrypt.genSaltSync(10);
 // const secret = 'vcjsvckbcksdbcksdbsdcv';
 
- app.use(cors({ credentials: true, origin: '*' , methods:["POST" , "GET" ]}));   
+app.use(cors({
+    origin: "https://food-ordering-client-eight.vercel.app/",
+    headers: {
+        "Access-Control-Allow-Origin": "https://food-ordering-client-eight.vercel.app/",
+        "Access-Control-Allow-Credentials": true
+    },
+}));   
 app.use(express.json());   //the process of converting a JSON string to a JSON object for data manipulation.
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(" mongodb+srv://admin:admin@cluster0.wx78qai.mongodb.net/FoodOrdering?retryWrites=true&w=majority&appName=Cluster0");
 
 app.get("/test",(req,res)=>{
  res.json("Hello");
