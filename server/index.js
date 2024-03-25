@@ -16,6 +16,9 @@ app.use(express.json());   //the process of converting a JSON string to a JSON o
 
 mongoose.connect(process.env.MONGO_URL);
 
+app.get("/",(req,res)=>{
+ res.json("Hello");
+})
 
 app.post ("/Register", async(req,res)=>{
     const { username, password } = req.body;
