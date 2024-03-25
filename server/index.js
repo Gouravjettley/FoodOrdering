@@ -16,7 +16,7 @@ app.use(express.json());   //the process of converting a JSON string to a JSON o
 
 mongoose.connect(process.env.MONGO_URL);
 
-app.get("/",(req,res)=>{
+app.get("/test",(req,res)=>{
  res.json("Hello");
 })
 
