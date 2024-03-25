@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header{
+    display: flex;
+     border: 1px solid black;
+     height: 3rem;
+}
+header p a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: orangered;
+    display: flex;
+}
+nav{
+    display: flex;
+    gap : 30px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+} */
+.header{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(255, 51, 0);
+    font-family: 'Protest Riot', sans-serif;
+}
+.register , .logout{
+    text-decoration: none;
+    background-color: orangered;
+    border-radius: 6px;
+    color: #fff;
+    padding:7px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap :10rem;
+}
+.pizza-image img{
+    height: 286px;
+    width: 300px;
+}
+section button{
+    font-size: 20px;
+
+}
+.btn1{
+    background-color: rgb(255, 68, 0);
+    border-radius: 4px;
+    color: #fff;
+    padding:8px;
+    margin-right: 2rem;
+    border-radius:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn2{
+    border: none;
+    background:none;
+    cursor: pointer;
+}
+.content{
+   text-align: center;
+}
+
+.menu-card{
+    height: 280px;
+    width: 240px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+.menu-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    /* background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.menu-card img{
+    height: 145px;
+    width: 150px;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr) ;
+}
+.menuapi{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 10rem;
+}
+.btn3{
+    background-color: rgb(255, 68, 0);
+    border-radius: 4px;
+    color: #fff;
+    padding:8px;
+    border-radius:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    /* width: 100%; */
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reg-form , .log-form{
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+.reg-form input , .log-form input{
+    border: none;
+    text-align: center;
+    background-color:#E1DFE9;
+    border-radius: 5px;
+    height: 2rem;
+    margin: 5px;
+}
+.reg-form button , .log-form button{
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    height: 2rem;
+    margin: 5px;
+}
+.contact{
+    text-align: center;
+    /* margin: 20px; */
+}
+.contact h1{
+    font-weight: bolder;
+    color: orangered;
+}
+.contact textarea{
+    height: 300px;
+    width: 300px;
+    overflow: visible;
+}
+.contact button{
+    margin: 10px;
+    width: 300px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 20px;
+}
+footer{
+    /* width: 100%; */
+    text-align: center;
+}
+footer ul a {
+     margin: 10px;
+}
+
+@media only screen and  (max-width:700px) and  (min-width:400px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        max-width: 700px;
+        margin:0 auto;
+    }
+    section{
+       margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap :5rem;
+        
+    }
+    .button{
+        display: flex;
+    }
+    .btn1{
+       padding: 4px;
+    }
+    .btn2{
+        border: none;
+        background:none;
+        cursor: pointer;
+    }
+    .menuapi{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 1rem;
+    }
+    .footer{
+        width: 100%;
+        height:2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
