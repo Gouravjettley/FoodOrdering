@@ -6,7 +6,7 @@ const Register = () => {
     const [email, setEmail] = useState('');
     async function register(e) {
         e.preventDefault();
-        const response = await fetch("https://food-ordering-api-beta.vercel.app//register", {
+        const response = await fetch("https://food-ordering-api-beta.vercel.app/register", {
             method: 'POST',
             body: JSON.stringify({ username, password, email }),
             headers: { 'Content-Type': 'application/json' },
