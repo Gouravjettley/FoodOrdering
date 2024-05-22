@@ -12,7 +12,7 @@ const salt = bcrypt.genSaltSync(10);
 // const secret = 'vcjsvckbcksdbcksdbsdcv';
 
 app.use(cors({
-    origin: "https://food-ordering-client-eight.vercel.app",
+    origin: "*",
     headers: {
         "Access-Control-Allow-Origin": "https://food-ordering-client-eight.vercel.app",
         "Access-Control-Allow-Credentials": true
